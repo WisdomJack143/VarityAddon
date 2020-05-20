@@ -9,7 +9,7 @@ import com.pixelsky.varityaddon.item.flint.*;
 import com.pixelsky.varityaddon.item.wand.*;
 
 @AutoWired
-@SharedCreativeTab("Tools")
+@SharedCreativeTab("varityaddon")
 public class ModItems {
     //wand
     @RegItem

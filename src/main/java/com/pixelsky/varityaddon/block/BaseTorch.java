@@ -10,7 +10,7 @@ import net.minecraft.world.World;
 
 import javax.annotation.Nullable;
 
-public class BaseTorch extends BlockTorch implements ITileEntityProvider {
+public abstract class BaseTorch extends BlockTorch implements ITileEntityProvider {
 
     private String name;
 
@@ -20,20 +20,6 @@ public class BaseTorch extends BlockTorch implements ITileEntityProvider {
         this.setTranslationKey(name);
         this.setRegistryName(name);
         this.name = name;
-        this.setCreativeTab(dartcraftReloaded.creativeTab);
     }
 
-    public void registerItemModel(Item itemBlock) {
-        dartcraftReloaded.proxy.registerItemRenderer(itemBlock, 0, name);
-    }
-
-    public Item createItemBlock() {
-        return new ItemBlock(this).setRegistryName(getRegistryName());
-    }
-
-    @Nullable
-    @Override
-    public TileEntity createNewTileEntity(World worldIn, int meta) {
-        return new TileEntityTimeTorch();
-    }
 }

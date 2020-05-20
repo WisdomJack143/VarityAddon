@@ -1,4 +1,7 @@
 package com.pixelsky.varityaddon.block.torch;
-//周围不会生怪
-public class TorchNoSpawn {
+
+import com.pixelsky.varityaddon.block.BaseTorch;
+
+//攻击其他怪物
+public class TorchNoSpawn extends BaseTorch {
 }

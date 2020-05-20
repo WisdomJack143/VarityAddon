@@ -1,4 +1,6 @@
 package com.pixelsky.varityaddon.block.torch;
 
-public class TorchTime {
+import com.pixelsky.varityaddon.block.BaseTorch;
+
+public class TorchTime  extends BaseTorch {
 }
